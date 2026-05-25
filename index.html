@@ -1,111 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jessy- Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Jessy Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#6c63ff;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            margin-top:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .hero{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;
+            padding:50px 20px;
+            background:white;
+        }
+
+        .hero-text{
+            max-width:500px;
+            margin:20px;
+        }
+
+        .hero-text h1{
+            font-size:45px;
+            color:#6c63ff;
+        }
+
+        .hero-text p{
+            margin-top:15px;
+            line-height:1.6;
+        }
+
+        .hero img{
+            width:280px;
+            border-radius:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .resume-btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#6c63ff;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        section{
+            padding:50px 20px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:25px;
+            color:#6c63ff;
+        }
+
+        .card{
+            background:white;
+            max-width:800px;
+            margin:20px auto;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card p{
+            margin-bottom:10px;
+            line-height:1.6;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        li{
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+    </style>
+
 </head>
+
 <body>
+
     <header>
-        <div class="logo">Jessy.</div>
+
+        <h1>Jessy D</h1>
+
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li> <!-- Link to Resume Section -->
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#experience">Experience</a>
+
+            <a href="#certifications">Certifications</a>
+
+            <a href="#contact">Contact</a>
+
         </nav>
-        <a href="#contact" class="btn">Let's Talk</a>
+
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <div class="home-content">
-            <div class="text-content">
-                <h1>Hi, I'm <span>Jessy</span></h1>
-                <h2>Full Stack Developer</h2>
-                <p>Building creative and responsive websites that engage users.</p>
-                <a href="#portfolio" class="btn">See My Work</a>
-                <a href="#contact" class="btn btn-outline">Hire Me</a>
-            </div>
-            <div class="profile-photo">
-                <img src="jessy1.png" alt="Suresh's Profile Photo">
-            </div>
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Hello, I'm Jessy</h1>
+
+            <p>
+                Motivated Computer Science graduate with hands-on
+                experience in Generative AI, Prompt Engineering,
+                Python, and Cloud technologies.
+            </p>
+
+            <a class="resume-btn" href="resume.pdf" target="_blank">
+
+                Download Resume
+
+            </a>
+
         </div>
+
+        <img src="profile.jpg" alt="Jessy Photo">
+
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <h1>About Me</h1>
-        <p>I specialize in building beautiful and functional web applications using HTML, CSS, JavaScript, and React.</p>
-    </section>
+    <section id="about">
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio">
-        <h1>My Projects</h1>
-        <div class="portfolio-gallery">
-            <div class="project">
-                <img src="project1.png" alt="Project 1">
-                <h3>Project One</h3>
-            </div>
-            <div class="project">
-                <img src="project2.png" alt="Project 2">
-                <h3>Project Two</h3>
-            </div>
-            <div class="project">
-                <img src="project3.png" alt="Project 3">
-                <h3>Project Three</h3>
-            </div>
+        <h2>About Me</h2>
+
+        <div class="card">
+
+            <p>
+                Motivated and detail-oriented Computer Science graduate
+                with hands-on experience in Generative AI,
+                Prompt Engineering, Python, and Cloud technologies.
+
+                Passionate about building intelligent applications
+                and contributing to innovation-driven software projects.
+            </p>
+
         </div>
+
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section resume">
+    <section id="skills">
 
+        <h2>Technical Skills</h2>
 
-        <!-- Link to download Resume PDF -->
-    <div class="resume-preview">
-            <h2>View My Resume</h2>
-        </div >   
-               <button>
-            <a href="jessypdf.pdf" class="btn" download>Download My Resume</a>
-        </button>
+        <div class="card">
 
-        <!-- Option to view Resume PDF directly in the browser -->
-     
-   
-    </section>
+            <p><b>Programming:</b> Python, SQL, JavaScript</p>
 
-    <!-- Blog Section -->
-    <section id="blog" class="section blog">
-        <h1>My Blog</h1>
-        <div class="blog-post">
-            <h3>How to Build a Responsive Website</h3>
-            <p>Learn the fundamentals of building mobile-friendly web applications...</p>
+            <p><b>Frontend:</b> HTML, CSS, JavaScript</p>
+
+            <p><b>Analytics & BI:</b> Data Cleaning, Dashboards, BI Reporting</p>
+
+            <p><b>Visualization:</b> Power BI, DAX, Data Modeling</p>
+
+            <p><b>Tools:</b> Excel, Google Sheets, GitHub</p>
+
+            <p><b>Soft Skills:</b> Communication, Problem Solving, Analytical Thinking</p>
+
         </div>
-        <div class="blog-post">
-            <h3>JavaScript Best Practices in 2025</h3>
-            <p>A guide to writing efficient and clean JavaScript code...</p>
-        </div>
+
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h1>Contact Me</h1>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="card">
+
+            <h3>Doctor Appointment Booking System</h3>
+
+            <p>
+                Developed an online hospital appointment booking system using HTML, CSS, and JavaScript for booking appointments and managing doctor schedules.
+Implemented user authentication, responsive dashboards, appointment tracking, and admin management features for patients, doctors, and administrators.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Digital Portfolio & Resume Builder</h3>
+
+            <p>
+                Developed a responsive digital portfolio website using HTML and CSS to showcase skills, projects, certifications, and resume.
+                Designed a professional and user-friendly interface with smooth navigation and downloadable resume integration..
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="experience">
+
+        <h2>Internship Experience</h2>
+
+        <div class="card">
+
+            <h3>Python Full Stack Intern — Pantech Solutions</h3>
+
+            <p>
+                Developed Python-based web applications with AI-assisted
+                development tools and integrated frontend/backend
+                components using REST APIs.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="certifications">
+
+        <h2>Certifications</h2>
+
+        <div class="card">
+
+            <ul>
+
+                <li>Generative AI with IBM Cloud (2026)</li>
+
+                <li>AI Fundamentals: Foundations for Understanding Artificial Intelligence</li>
+
+                <li>Oracle Cloud Infrastructure AI Foundations</li>
+
+                <li>NSQF Customer Care Senior Executive</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="card">
+
+            <p>Email: jessydhasa@gmail.com</p>
+
+            <p>Phone: 9940029625</p>
+
+            <p>Location: Chennai, Tamil Nadu</p>
+
+            <p>GitHub: github.com/jessydhasa</p>
+
+        </div>
+
     </section>
 
     <footer>
-        <p>© 2025 Suresh. All Rights Reserved.</p>
+
+        <p>© 2026 Jessy Portfolio</p>
+
     </footer>
+
 </body>
+
 </html>
